@@ -402,6 +402,29 @@ h1#title>a {
 .booklink-footer {
   display: none;
 }
+
+.double-rect-ads-group {
+  padding: 3px;
+}
+.ads-parent {
+  padding: 3px;
+}
+.double-rect-ads2 {
+  display: none;
+}
+@media screen and (min-width: 680px) {
+  .double-rect-ads-group {
+    display: table;
+    table-layout:fixed;
+  }
+  .double-rect-ads1 {
+    display: table-cell;
+  }
+  .double-rect-ads2 {
+    display: table-cell;
+  }
+}
+
 @media screen and (max-width: 680px) {
   .booklink-box, .kaerebalink-box {
     padding: 15px;
@@ -425,25 +448,6 @@ h1#title>a {
     margin: 2px 0px;
     padding: 10px 0px;
   }
-  .double-rect-ads-group>div {
-    margin: 0 auto;
-  }
-  .double-rect-ads1 {
-    float: none;
-    text-align: center;
-  }
-  .double-rect-ads2 {
-    display: none;
-  }
-}
-/* Ads ダブルレクタングル */
-/*.double-rect-ads-group > div { margin: 0 5px 0 5px; } */
-.double-rect-ads1 {
-  float: right;
-}
-.double-rect-ads2 {
-  float: none;
-  display: inline-block;
 }
 /*アプリーチカスタム(旧)*/
 #appreach-box {
