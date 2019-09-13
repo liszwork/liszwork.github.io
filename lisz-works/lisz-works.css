@@ -378,7 +378,7 @@ h1#title>a {
 .shoplinkamazon a {
   background-color: #FF9901 !important;
 }
-.shoplinkrakuten a {
+.shoplinkrakuten a, shoplinkrakukobo a {
   background-color: #c20004 !important;
 }
 .shoplinkkindle a {
