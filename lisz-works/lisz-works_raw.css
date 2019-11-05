@@ -12,6 +12,9 @@
 form.search-form {
   background-color: #fff;
 }
+strong {
+  color: #ddd;
+}
 /* aタグ */
 a:link {
   /*未訪問のリンクの色*/
