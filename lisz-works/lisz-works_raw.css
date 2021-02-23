@@ -1,13 +1,11 @@
-/* <system section="theme" selected="6653458415126702313"> */
 @import "https://blog.hatena.ne.jp/-/theme/6653458415126702313.css";
-/* </system> */
-/* <system section="background" selected="undefined"> */
-/* </system> */
+
 /* 画像 センタリング */
 .entry-content img {
   display: block;
   margin: 0px auto;
 }
+
 /* 検索バー */
 form.search-form {
   background-color: #fff;
@@ -15,6 +13,7 @@ form.search-form {
 strong {
   color: #ddd;
 }
+
 /* aタグ */
 a:link {
   /*未訪問のリンクの色*/
@@ -32,6 +31,7 @@ a:active {
   /*クリック中のリンクの色*/
   color: #9affff;
 }
+
 /* カテゴリ */
 .entry-categories.categories a {
   color: #fff;
@@ -46,15 +46,18 @@ a:active {
 .entry-categories.categories a:hover {
   background: #5E5E5E;
 }
+
 /* TBL */
 th {
   color: #fff;
 }
+
 /* リスト */
 ul {
   margin-left: 30px;
   padding-bottom: 10px;
 }
+
 /* 目次関連 */
 .table-of-contents:before {
   content: "目次";
@@ -73,6 +76,7 @@ ul {
 .table-of-contents ul ul {
   display: none;
 }
+
 /* ヘッダー */
 h1#title>a {
   font-family: 'Chau Philomene One', sans-serif;
@@ -108,15 +112,14 @@ h1#title>a {
   border-bottom: #3A0075 3px solid;
   padding-bottom: 15px;
 }
+
 /* パン屑リスト */
 #top-box .breadcrumb {
   background: #3a3a3a;
   border: 0px
 }
+
 /* 引用 */
-/* .entry-content blockquote { */
-/*   background: #222;     */
-/* }               */
 .entry-content blockquote {
   position: relative;
   background: #222;
@@ -130,7 +133,8 @@ h1#title>a {
   font-size: 5em;
   color: rgba(255,255,255,0.1);
 }
-/* シェアボタン */
+
+/* 記事下シェアボタン */
 .share-flat {
   margin-bottom: 10px;
   text-align: center;
@@ -189,7 +193,6 @@ h1#title>a {
   position: relative;
   background: rgba(0, 195, 0, .6);
 }
-
 @screen and (min-width: 480px) {
   .line-hide {
     display: none;
@@ -198,6 +201,7 @@ h1#title>a {
     width: 18%;
   }
 }
+
 /* 左下シェアボタン+ */
 .share-mini-icons-inner>a .small-text {
   display: none;
@@ -253,6 +257,7 @@ h1#title>a {
 .blog-reader-button {
   background: #6E6E6E;
 }
+
 /* フォローボタン */
 .follow-btn {
   width: 100%;
@@ -319,6 +324,7 @@ h1#title>a {
   display: inline-block;
   font-family: blogicon;
 }
+
 .follow-btn a {
   width: 100%;
   height: 100%;
@@ -394,7 +400,7 @@ h1#title>a {
   position: relative;
   top: 1px;
 }
-/*ボタンを変えるときはここから*/
+/* ボタンを変えるときはここから */
 .shoplinkamazon a {
   background-color: #FF9901 !important;
 }
@@ -423,40 +429,7 @@ h1#title>a {
 .booklink-footer {
   display: none;
 }
-@media screen and (max-width: 680px) {
-  .booklink-box, .kaerebalink-box {
-    padding: 15px;
-  }
-  .booklink-image, .kaerebalink-image {
-    width: 100px !important;
-    min-width: initial;
-  }
-  .booklink-name>a, .kaerebalink-name>a {
-    font-size: 15px;
-    font-weight: bold;
-  }
-  .booklink-name, .kaerebalink-name {
-    margin-bottom: 12px;
-  }
-  .booklink-powered-date, .kaerebalink-powered-date {
-    margin-top: 5px;
-  }
-  .booklink-link2 a, .kaerebalink-link1 a {
-    width: calc(100% - 4px);
-    margin: 2px 0px;
-    padding: 10px 0px;
-  }
-  .double-rect-ads-group>div {
-    margin: 0 auto;
-  }
-  .double-rect-ads1 {
-    float: none;
-    text-align: center;
-  }
-  .double-rect-ads2 {
-    display: none;
-  }
-}
+
 /* Ads ダブルレクタングル */
 /*.double-rect-ads-group > div { margin: 0 5px 0 5px; } */
 .double-rect-ads1 {
@@ -466,6 +439,7 @@ h1#title>a {
   float: none;
   display: inline-block;
 }
+
 /*アプリーチカスタム(旧)*/
 #appreach-box {
   border-radius: 5px;
@@ -480,12 +454,14 @@ h1#title>a {
   margin-bottom: 0;
   line-height: 0;
 }
+
 /* Amazlet */
 .amazlet-box {
   padding: 5px;
   border: solid 3px #f90;
   background: #444;
 }
+
 /*アプリーチ(新)*/
 .appreach {
   background: #444;
@@ -559,24 +535,8 @@ h1#title>a {
 .appreach__links>a {
   float: left;
 }
-/* ページトップへ戻るボタン */
-#pagetop {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  /* padding:10px 20px; */
-  color: #fff;
-  font-size: 15px;
-  text-decoration: none;
-  /* background:#3a0075; */
-  color: #555;
-}
-/* ページトップへ戻るボタン：ホバー時 */
-#pagetop:hover {
-  background-color: rgba(0, 0, 0, 0.0);
-  color: #999;
-}
-/***** グローバルナビ *****/
+
+/* グローバルナビ */
 #menu {
   width: 100%;
   max-width: 960px;
@@ -611,78 +571,25 @@ h1#title>a {
 #affiliate-link {
   text-align: center;
 }
-/* 画面サイズが768px以下の場合に適用 */
-/* @media only screen and (max-width: 768px) { */
-@media only screen and (max-width: 1000px) {
-  #menu li {
-    width: 25%;
-    border-bottom: 1px solid #2e0050;
-  }
-  #menu li a, #menu li:last-child a {
-    border: 1px solid #2e0050;
-  }
+
+/* ページトップへ戻るボタン */
+#pagetop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  /* padding:10px 20px; */
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  /* background:#3a0075; */
+  color: #555;
 }
-/* 画面サイズが480px以下の場合に適用 */
-/*@media only screen and (max-width: 480px)*/
-@media only screen and (max-width: 480px) {
-  #menu {
-    display: none;
-  }
-  #menu li {
-    width: 100%;
-  }
-  #menu li a, #menu li:last-child a {
-    border: none;
-    border-bottom: 1px solid #2e0050;
-  }
-  #menu li a:hover {
-    background: #200040;
-  }
-  #toggle {
-    display: block;
-    position: relative;
-    width: 100%;
-    background: #5B2A8C;
-  }
-  #toggle a {
-    display: block;
-    position: relative;
-    padding: 20px 0 20px;
-    border-top: 2px solid #2e0050;
-    border-bottom: 2px solid #2e0050;
-    color: #FFF;
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-  }
-  #toggle:before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    margin-top: -15px;
-    background: #FFF;
-  }
-  #toggle a:before, #toggle a:after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    width: 30px;
-    height: 6px;
-    background: #5B2A8C;
-  }
-  #toggle a:before {
-    margin-top: -9px;
-  }
-  #toggle a:after {
-    margin-top: 3px;
-  }
+/* ページトップへ戻るボタン：ホバー時 */
+#pagetop:hover {
+  background-color: rgba(0, 0, 0, 0.0);
+  color: #999;
 }
+
 /***** 会話のCSS *****/
 .talk-wrap {
   display: block;
@@ -802,7 +709,7 @@ h1#title>a {
   clear: both;
   margin-bottom: 5px;
 }
-/*****レスポンシブ設定*****/
+/* 会話:レスポンシブ設定 */
 @media screen and (max-width: 480px) {
   .left-icon {
     width: 80px;
@@ -833,5 +740,112 @@ h1#title>a {
   }
   .talk-right {
     width: 65%;
+  }
+}
+
+/* 画面サイズが480px以下の場合に適用 */
+@media only screen and (max-width: 480px) {
+  #menu {
+    display: none;
+  }
+  #menu li {
+    width: 100%;
+  }
+  #menu li a, #menu li:last-child a {
+    border: none;
+    border-bottom: 1px solid #2e0050;
+  }
+  #menu li a:hover {
+    background: #200040;
+  }
+  #toggle {
+    display: block;
+    position: relative;
+    width: 100%;
+    background: #5B2A8C;
+  }
+  #toggle a {
+    display: block;
+    position: relative;
+    padding: 20px 0 20px;
+    border-top: 2px solid #2e0050;
+    border-bottom: 2px solid #2e0050;
+    color: #FFF;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  #toggle:before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    background: #FFF;
+  }
+  #toggle a:before, #toggle a:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 30px;
+    height: 6px;
+    background: #5B2A8C;
+  }
+  #toggle a:before {
+    margin-top: -9px;
+  }
+  #toggle a:after {
+    margin-top: 3px;
+  }
+}
+
+/* 最狭:枠なし */
+@media screen and (max-width: 680px) {
+  .booklink-box, .kaerebalink-box {
+    padding: 15px;
+  }
+  .booklink-image, .kaerebalink-image {
+    width: 100px !important;
+    min-width: initial;
+  }
+  .booklink-name>a, .kaerebalink-name>a {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .booklink-name, .kaerebalink-name {
+    margin-bottom: 12px;
+  }
+  .booklink-powered-date, .kaerebalink-powered-date {
+    margin-top: 5px;
+  }
+  .booklink-link2 a, .kaerebalink-link1 a {
+    width: calc(100% - 4px);
+    margin: 2px 0px;
+    padding: 10px 0px;
+  }
+  .double-rect-ads-group>div {
+    margin: 0 auto;
+  }
+  .double-rect-ads1 {
+    float: none;
+    text-align: center;
+  }
+  .double-rect-ads2 {
+    display: none;
+  }
+}
+/* 画面サイズが1000px以下の場合に適用 */
+@media only screen and (max-width: 1000px) {
+  #menu li {
+    width: 25%;
+    border-bottom: 1px solid #2e0050;
+  }
+  #menu li a, #menu li:last-child a {
+    border: 1px solid #2e0050;
   }
 }
