@@ -1,0 +1,112 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script language="JavaScript">
+    $(document).ready(function () {
+        $("a[href^='http']:not([href*='" + location.hostname + "'])").attr('target', '_blank');
+    })
+</script>
+
+<!-- コピーライト -->
+<div id="n-copyright" align="center">
+    <h4>&copy; 2018 <a href="http://www.lisz-works.com/">lisz-works</a></h4>
+</div>
+
+<!-- 表示/隠す -->
+<script>
+    $(function () {
+        var strOpen = '[表示]';
+        var strClose = '[隠す]';
+        $('.otantoggleopn').append(' <span style="color: #666; font-size: 80%">' + strClose + '</span>');
+        $('.otantogglecls').append(' <span style="color: #666; font-size: 80%">' + strOpen + '</span>').next().css('display', 'none');
+        $('.otantoggleopn, .otantogglecls').click(function () {
+            var $this = $(this);
+            $this.next().slideToggle(400);
+            if ($this.children('span').text() == strClose) {
+                $this.children('span').text(strOpen);
+            } else {
+                $this.children('span').text(strClose);
+            };
+        });
+    });
+</script>
+
+<!-- AdsenseフッターAd -->
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-5328667023356520",
+        enable_page_level_ads: true
+    });
+</script>
+
+
+<!-- ページトップへのスクロール処理 -->
+<script>
+    $(function () {
+        /** ページトップ処理 **/
+        // スクロールした場合
+        $(window).scroll(function () {
+            // スクロール位置が200を超えた場合
+            if ($(this).scrollTop() > 200) {
+                $('#pagetop').fadeIn();
+            } else {
+                // ページトップへをフェードアウト
+                $('#pagetop').fadeOut();
+            }
+        });
+        // ページトップクリック
+        $('#pagetop').click(function () {
+            // ページトップへスクロール
+            $('html, body').animate({
+                scrollTop: 0
+            }, 300);
+            return false;
+        });
+    });
+</script>
+<a id="pagetop" href="#top" class="page_top" style="display: none;">
+    <i class="fa fa-caret-square-o-up fa-5x" aria-hidden="true"></i>
+</a>
+
+<!-- グローバルグローバルナビ-->
+<script type="text/javascript">
+    $(function () {
+        $("#toggle").click(function () {
+            $("#menu").slideToggle();
+            return false;
+        });
+        $(window).resize(function () {
+            var win = $(window).width();
+            var p = 680;
+            if (win > p) {
+                $("#menu").show();
+            } else {
+                $("#menu").hide();
+            }
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    // affiliate
+    var data = null;
+    var xhr = new XMLHttpRequest();
+    xhr.addEventListener("readystatechange", function () {
+        if (this.readyState === this.DONE) {
+            // console.log("[" + typeof(this.responseText) + "]" + this.responseText + ", [" + typeof(JSON.parse(this.responseText)) + "]" + JSON.parse(this.responseText));
+            var elm = document.getElementById("affiliate-link");
+            var resText = JSON.parse(this.responseText);
+            console.log(resText["link"]);
+            elm.innerHTML = resText["link"];
+        }
+    });
+    var pageUrl = location.href;
+    var url = "https://script.google.com/macros/s/AKfycbx1RbFhPw10wtNpwvVF4uUTezc3F43hmvPbHOLDejGaG4zkD8I/exec?url=" + pageUrl + "&cat="
+    var category_title = "null";
+    var category_element = document.querySelector("div.categories a");
+    if (category_element !== undefined && category_element != null) {
+        category_title = category_element.text;
+    }
+    url += category_title;
+    xhr.open("GET", url);
+    xhr.send(data);
+</script>
