@@ -10,15 +10,7 @@
 ### 編集の流れ
 
 1. xxx_raw.cssを編集
-2. [CSSの圧縮を行う](http://e-optimize.jp/services/csstidy/css_optimiser.php)
-   1. Code Layout
-      1. 圧縮率: 最高(改行なし)
-   1. Options
-      1. CSSの内容を保護する
-      1. colorの値を簡略化する
-      1. font-weightを数値にする
-      1. 不要なバックスラッシュを削除
-      1. 最適化の結果を保存する
+2. [CSSの圧縮を行う](https://syncer.jp/css-minifier)
 3. 圧縮結果をxxx.cssに反映する
 4. Commit-Push
 
