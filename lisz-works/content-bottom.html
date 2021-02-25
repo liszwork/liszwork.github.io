@@ -1,0 +1,124 @@
+<script>
+  //AdSense Filter v1.0.0,Date:2014-12-10,(c)2014 http://hapilaki.hateblo.jp/,Released under the MIT license: http://opensource.org/licenses/mit-license.php
+  noAdsTag = "広告不要"; //広告を設置しないタグを指定
+  var pageTags = document.getElementsByTagName("meta");
+  function adsFilter() {
+    for (var i = 0; i < pageTags.length; i++) {
+      if (("article:tag" == pageTags[i].getAttribute("property")) && (noAdsTag == pageTags[i].getAttribute("content"))) {
+        document.write('<!--');
+        break;
+      }
+    }
+  }
+  adsFilter();
+</script>
+<!-- affiliate  -->
+<div id="affiliate-link"></div>
+<!-- ads -->
+<div class="double-rect-ads-group">
+  <!-- ads filter 広告用文字消すために1つ目はこの位置 -->
+  <p style="text-align: center;"><span style="font-size: 85%;">【スポンサーリンク】</span><br /></p>
+
+  <div class="double-rect-ads1">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
+      data-ad-client="ca-pub-5328667023356520" data-ad-slot="5707161444"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <!-- lisz-works 300x250 foot-1 -->
+  </div>
+  <div class="double-rect-ads2">
+    <!-- ads filter -->
+    <script>adsFilter();</script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
+      data-ad-client="ca-pub-5328667023356520" data-ad-slot="8108418912"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <!-- lisz-works 300x250 foot-2 -->
+  </div>
+</div>
+<!-- 関連コンテンツユニット -->
+<div class="hatena-module-title">関連記事</div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle" style="display:block" data-ad-format="autorelaxed" data-ad-client="ca-pub-5328667023356520"
+  data-ad-slot="5070697543"></ins>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!--シェアボタン-->
+<div class="share-flat">
+  <span style="font-size: 14px">シェアする</span>
+  <div class="share-flat-inner">
+    <div>
+      <!--はてブ-->
+      <a href="http://b.hatena.ne.jp/entry/{URLEncodedPermalink}" class="hatena-bookmark-button" target="_blank"
+        data-hatena-bookmark-title="{Title}" data-hatena-bookmark-layout="simple" title="このエントリーをはてなブックマークに追加">
+        <i class="blogicon-bookmark lg"></i><br>
+        <span class="small-text">hatena</span>
+      </a>
+      <!--Facebook-->
+      <a href="http://www.facebook.com/sharer.php?u={URLEncodedPermalink}"
+        onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"
+        class="facebook-button">
+        <i class="blogicon-facebook lg"></i><br>
+        <span class="small-text">Facebook</span>
+      </a>
+      <!--Twitter-->
+      <a href="http://twitter.com/intent/tweet?text={Title} {URLEncodedPermalink}" target="_blank"
+        class="twitter-button">
+        <i class="blogicon-twitter lg"></i><br>
+        <span class="small-text">Twitter</span>
+      </a>
+    </div>
+    <div>
+      <!--Pocket-->
+      <a href="http://getpocket.com/edit?url={URLEncodedPermalink}" class="pocket-button" target="_blank">
+        <i class="fa fa-get-pocket"></i><br>
+        <span class="small-text">Pocket</span>
+      </a>
+      <!--ライン-->
+      <a href="http://line.me/R/msg/text/?{Title} {URLEncodedPermalink}" class="line-button line-hide">
+        <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/f/ftmaccho/20150905/20150905143148.png" width="16px"
+          height="16px" alt="LINEで送る" /><br>
+        <span class="small-text">Line</span>
+      </a>
+    </div>
+  </div>
+</div>
+<!--左下シェアボタン+-->
+<div class="share-mini-icons">
+  <div class="share-mini-icons-inner">
+    <!--はてブ-->
+    <a href="http://b.hatena.ne.jp/entry/{URLEncodedPermalink}" class="hatena-bookmark-button" target="_blank"
+      data-hatena-bookmark-title="{Title}" data-hatena-bookmark-layout="simple" title="このエントリーをはてなブックマークに追加">
+      <i class="blogicon-bookmark lg"></i><br>
+      <span class="small-text">はてなブログ</span>
+    </a>
+    <!--Facebook-->
+    <a href="http://www.facebook.com/sharer.php?u={URLEncodedPermalink}"
+      onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"
+      class="facebook-button">
+      <i class="blogicon-facebook lg"></i><br>
+      <span class="small-text">Facebook</span>
+    </a>
+    <!--Twitter-->
+    <a href="http://twitter.com/intent/tweet?text={Title} {URLEncodedPermalink}" target="_blank" class="twitter-button">
+      <i class="blogicon-twitter lg"></i><br>
+      <span class="small-text">Twitter</span>
+    </a>
+    <!--Pocket-->
+    <a href="http://getpocket.com/edit?url={URLEncodedPermalink}" class="pocket-button" target="_blank">
+      <i class="fa fa-get-pocket"></i><br>
+      <span class="small-text">Pocket</span>
+    </a>
+    <!-- 読者になる -->
+    <a href="http://blog.hatena.ne.jp/liszworks/www.lisz-works.com/subscribe" class="blog-reader-button"
+      target="_blank">
+      <i class="blogicon-hatenablog lg"></i><br>
+      <span class="small-text">読者になる</span>
+    </a>
+  </div>
+</div>
