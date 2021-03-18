@@ -32,6 +32,13 @@ a:active {
   color: #9affff;
 }
 
+/* code */
+.entry-content code {
+  border-color: #363a3d;
+  background-color: #1c1e1f;
+  color: #b2aca2
+}
+
 /* カテゴリ */
 .entry-categories.categories a {
   color: #fff;
@@ -844,14 +851,18 @@ h1#title>a {
   }
 }
 
-
+/* w <= max */
+@media only screen and (max-width: 480px) {
+}
+/* min <= w <= max */
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+}
 /* min <= w */
 @media only screen and (min-width: 1024px) {
   div#container {
     width: 90%
   }
   div#main {
-    /* width: 75% */
     width: calc(100% - 280px)
   }
 }
