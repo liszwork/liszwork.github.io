@@ -141,74 +141,6 @@ h1#title>a {
   color: rgba(255,255,255,0.1);
 }
 
-/* 記事下シェアボタン */
-.share-flat {
-  margin-bottom: 10px;
-  text-align: center;
-}
-.share-flat-inner a {
-  position: relative;
-  display: inline-block;
-  width: 18%;
-  height: 50px;
-  line-height: 20px;
-  font-size: 16px;
-  text-align: center;
-  color: #fff;
-  text-decoration: none;
-  margin-bottom: 5px;
-  padding-top: 10px;
-}
-.share-flat .small-text {
-  font-size: 10px;
-}
-.share-flat .hatena-bookmark-button {
-  background: #00A4DE;
-}
-.share-flat .twitter-button {
-  background: #55ACEE;
-}
-.share-flat .googleplus-button {
-  background: #C53727;
-}
-.share-flat .facebook-button {
-  background: #405BA7;
-}
-.share-flat .pocket-button {
-  background: #EE4256;
-}
-.share-flat .line-button {
-  position: relative;
-  background: #00C300;
-}
-.share-flat .hatena-bookmark-button:hover {
-  background: rgba(0, 164, 222, .6);
-}
-.share-flat .twitter-button:hover {
-  background: rgba(85, 172, 238, .6);
-}
-.share-flat .googleplus-button:hover {
-  background: rgba(197, 55, 39, .6);
-}
-.share-flat .facebook-button:hover {
-  background: rgba(64, 91, 167, .6);
-}
-.share-flat .pocket-button:hover {
-  background: rgba(238, 66, 86, .6);
-}
-.share-flat .line-button:hover {
-  position: relative;
-  background: rgba(0, 195, 0, .6);
-}
-@screen and (min-width: 480px) {
-  .line-hide {
-    display: none;
-  }
-  .share-flat-inner a {
-    width: 18%;
-  }
-}
-
 /* 左下シェアボタン+ */
 .share-mini-icons-inner>a .small-text {
   display: none;
@@ -249,20 +181,8 @@ h1#title>a {
 .hatena-bookmark-button {
   background: #2d6bc4;
 }
-.facebook-button {
-  background: #3b5998;
-}
-.twitter-button {
-  background: #1da1f2;
-}
-.googleplus-button {
-  background: #dd4b39;
-}
 .pocket-button {
   background: #ef4056;
-}
-.blog-reader-button {
-  background: #6E6E6E;
 }
 
 /* フォローボタン */
