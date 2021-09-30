@@ -1,0 +1,12 @@
+.powered-by-hatenablog {
+  display: none
+}
+body {
+  background:#ddd
+}
+pre.code {
+  background:#bbb
+}
+h2,h3,h4 {
+  border-bottom: 2px solid #bbb
+}
